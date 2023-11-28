@@ -59,16 +59,17 @@ function Imageslider() {
     <div id="imageslider" className="flex flex-row justify-between items-center w-full border-2 border-black p-2 gap-2">
       <button id="prev" onClick={prev} className="text-xl rounded-2xl text-center px-3 border-2 border-black w-1/7 p-2">&lt;</button>
         {isMobile ? (
-          <div id="sliding" className="flex flex-row w-5/7">
-            <img src={SliderData[slides[0]].image} className="w-full border-2 border-white rounded-lg" alt="image slider"/>
-          </div>
-        ) : (
-          <div id="sliding" className="flex flex-row w-5/7">
-            <img src={SliderData[slides[0]].image} className="w-1/3 border-2 border-white rounded-lg" alt="image slider"/>
-            <img src={SliderData[slides[1]].image} className="w-1/3 border-2 border-white rounded-lg" alt="image slider"/>
-            <img src={SliderData[slides[2]].image} className="w-1/3 border-2 border-white rounded-lg" alt="image slider"/>
-          </div>
-        )}
+            <div id="sliding" className="flex flex-row w-5/7">
+              <img src={SliderData[slides[0]].image} className="w-full h-full object-cover border-2 border-white rounded-lg" alt="image slider"/>
+            </div>
+          ) : (
+            <div id="sliding" className="grid grid-cols-3 w-5/7">
+              <img src={SliderData[slides[0]].image} className="w-full h-full object-cover border-2 border-white rounded-lg" alt="image slider"/>
+              <img src={SliderData[slides[1]].image} className="w-full h-full object-cover border-2 border-white rounded-lg" alt="image slider"/>
+              <img src={SliderData[slides[2]].image} className="w-full h-full object-cover border-2 border-white rounded-lg" alt="image slider"/>
+            </div>
+          )}
+
       <button id="next" onClick={next} className="text-xl rounded-2xl text-center px-3 border-2 border-black w-1/7 p-2">&#62;</button>
     </div>
   );

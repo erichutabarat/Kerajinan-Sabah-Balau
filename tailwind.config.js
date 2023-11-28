@@ -5,7 +5,15 @@ export default {
     "./src/**/*.jsx",
     ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "colorbg1" : "#FFB4B4",
+        "colorbg2" : "#B2A4FF",
+        "colorfont1" : "#537188",
+        "colorfont2" : "#374259",
+        "colorfont3" : "#116A7B",
+      }
+    },
   },
   plugins: [],
 }
