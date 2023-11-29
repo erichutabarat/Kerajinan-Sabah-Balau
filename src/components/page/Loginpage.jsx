@@ -2,9 +2,9 @@ import Test from '../../assets/test.jpg';
 
 function Loginpage(){
 	return(
-		<section id="Loginpage" className="w-full flex flex-col md:flex-row items-center justify-center self-center">
+		<section id="Loginpage" className="w-full flex flex-col md:flex-row items-center justify-center self-center p-2">
 			<div className="w-full md:w-1/3">
-				<img src={Test} alt="test image" className="w-full h-[420px] object-fill"/>
+				<img src={Test} alt="test image" className="rounded-2xl w-full h-[420px] object-fill"/>
 			</div>
 			<div id="login" className="w-full h-full md:w-1/3 p-3 bg-white flex flex-col gap-5">
 				<h2 className="text-2xl text-center">Welcome Back!</h2>

@@ -7,8 +7,8 @@ function Introduction(){
 				<h2 className="w-full text-center text-xl md:text-2xl font-medium self-center">Kreativitas Desa, Keindahan Tradisi: Melangkah Bersama 
 				Kerajinan Tangan Sabah Balau</h2>
 				<div className="flex flex-row justify-center p-2 gap-3">
-					<button className="border-2 border-black text-lg px-5 py-1 rounded-2xl">Cara Pemesanan</button>
-					<a href="#daftar-produk" className="text-lg px-5 py-1 rounded-2xl bg-pink-500 text-white">Belanja Sekarang</a>
+					<button className="border-2 border-slate-700 text-lg px-5 py-1 rounded-2xl">Cara Pemesanan</button>
+					<a href="#daftar-produk" className="text-lg px-5 py-1 rounded-2xl bg-pink-500 hover:bg-pink-700 text-white">Belanja Sekarang</a>
 				</div>
 			</div>
 			<div className="w-full md:w-1/3 h-[420px] hidden md:flex flex-col justify-center items-center">
