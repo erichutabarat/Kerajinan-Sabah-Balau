@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,31 +9,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
-      import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
-      const firebaseConfig = {
-        apiKey: "AIzaSyCEiYO7JRUDQ4NJ-l_gjpgrtK7f2OJqFWU",
-        authDomain: "kerajinan-sabah-balau.firebaseapp.com",
-        projectId: "kerajinan-sabah-balau",
-        storageBucket: "kerajinan-sabah-balau.appspot.com",
-        messagingSenderId: "14738589359",
-        appId: "1:14738589359:web:a3e45532341e9bb213365a",
-        measurementId: "G-3X738LQ86Y",
-        databaseURL: "https://kerajinan-sabah-balau-default-rtdb.asia-southeast1.firebasedatabase.app",
-      };
-      const app = initializeApp(firebaseConfig);
-      const db = getDatabase(app);
-      const analytics = getAnalytics(app);
-      const blogref = ref(db, 'articles');
-      onValue(blogref, handleSuccess, handleError);
-      function handleSuccess(items){
-        console.log(items.val());
-      }
-      function handleError(items){
-        console.log(items);
-      }
     </script>
   </body>
 </html>

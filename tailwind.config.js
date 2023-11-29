@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "colorbg1" : "#FFB4B4",
+        "colorbg1" : "#F9F5F6",
         "colorbg2" : "#B2A4FF",
         "colorfont1" : "#537188",
         "colorfont2" : "#374259",
