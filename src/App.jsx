@@ -24,7 +24,7 @@ function App() {
             <Route path="/product" element={<Productpage/>}/>
             <Route path="/article" element={<Articlepage/>}/>
             <Route path="/video" element={<Videopage/>}/>
-            <Route path="/productdetail" element={<Productdetail/>}/>
+            <Route path="/productdetail/:id" element={<Productdetail/>}/>
             <Route path="/carapemesanan" element={<Howtobuy/>}/>
             <Route path="/tentangdesa" element={<About/>}/>
             <Route path="/cari" element={<Searchpage/>}/>
